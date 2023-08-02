@@ -18,6 +18,7 @@ import Image from "next/image";
 //     <>
 //       <h2 className="heading">myName</h2>
 //       <h2 className="heading">{myName}</h2>
+//       <h2 className="heading">3 + 2</h2>
 //       <h2 className="heading">{3 + 2}</h2>
 //       {/* error */}
 //       {/* <h2 className="heading">{3 + }</h2> */}
