@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.myH1 {
+  color: blue;
+}
+
+.heading {
+  /* @apply is not recommanded use inline tailwind */
+  @apply text-4xl bg-red-400 font-bold py-2;
+}
