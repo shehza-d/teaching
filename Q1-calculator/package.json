@@ -1,0 +1,21 @@
+{
+  "name": "q1-fresh-project",
+  "version": "1.0.0",
+  "description": "calculator",
+  "main": "main.js",
+  "type": "module",
+  "bin": {
+    "calculator": "main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "f"
+  },
+  "author": "shehzad",
+  "dependencies": {
+    "inquirer": "^9.1.5"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3"
+  }
+}

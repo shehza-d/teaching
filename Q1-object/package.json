@@ -1,0 +1,11 @@
+{
+  "name": "q1-fresh-project",
+  "version": "1.0.0",
+  "description": "calculator",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "f"
+  },
+  "author": "shehzad"
+}
