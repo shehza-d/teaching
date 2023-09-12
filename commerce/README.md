@@ -46,8 +46,7 @@ You will need to use the environment variables [defined in `.env.example`](.env.
 3. Download your environment variables: `vercel env pull`
 
 ```bash
-pnpm install
-pnpm dev
+pnpm install && pnpm dev
 ```
 
 Your app should now be running on [localhost:3000](http://localhost:3000/).
@@ -56,10 +55,11 @@ Your app should now be running on [localhost:3000](http://localhost:3000/).
   <summary>Expand if you work at Vercel and want to run locally and / or contribute</summary>
 
 1. Run `vc link`.
-1. Select the `Vercel Solutions` scope.
-1. Connect to the existing `commerce-shopify` project.
-1. Run `vc env pull` to get environment variables.
-1. Run `pmpm dev` to ensure everything is working correctly.
+2. Select the `Vercel Solutions` scope.
+3. Connect to the existing `commerce-shopify` project.
+4. Run `vc env pull` to get environment variables.
+5. Run `pmpm dev` to ensure everything is working correctly.
+
 </details>
 
 ## Vercel, Next.js Commerce, and Shopify Integration Guide

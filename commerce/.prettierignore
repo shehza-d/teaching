@@ -1,3 +1,4 @@
 .vercel
 .next
 pnpm-lock.yaml
+**/node_modules
