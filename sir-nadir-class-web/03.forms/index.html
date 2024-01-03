@@ -6,35 +6,65 @@
     <title>Document</title>
   </head>
   <body>
+    <form id="search-bar">
+      <input type="search" placeholder="Search..." />
+    </form>
+
     <h1>Forms</h1>
 
-    <form>
-      <input name="name" placeholder="Name" required type="text" />
+    <!-- name ka maqsad hy pexhan -->
+    <!-- value wo chez hy jo abhi input ky andar hy  -->
+
+    <form id="information-form">
       <input
-        name="father-name"
-        placeholder="Father Name"
+        name="name"
+        value="Shehzad"
+        maxlength="10"
+        placeholder="Name"
         required
         type="text"
       />
-      <input name="password" placeholder="Password" type="password" />
+      <input name="father-name" placeholder="Father Name" type="text" />
       <input
-        name="email"
+        name="password"
+        placeholder="Password"
+        type="password"
+        minlength="8"
+        maxlength="200"
+        required
+        pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+      />
+      <input
+        name="user-email"
         placeholder="Enter your Email..."
         required
         type="email"
       />
+      <input
+        type="text"
+        name="city"
+        placeholder="City name"
+        value="interior sindh"
+        disabled
+      />
       <input name="phone-number" placeholder="" type="tel" />
-      <input name="profile-link" placeholder="shehzad" type="url" />
+      <input required name="profile-link" placeholder="shehzad" type="url" />
 
       <p>Pick color for your car</p>
       <input type="color" />
       <input type="range" />
       <input type="date" />
 
+      <br /><br />
+
+      <input  type="file" accept="video/*" />
+      <input type="file" data-max-size="22154" accept=".html" />
+
+      <textarea name="" ></textarea>
       <!-- file/value -->
 
       <br />
-      <button>Cancel</button>
+      <button >Cancel</button>
       <button type="submit">Done</button>
     </form>
 
