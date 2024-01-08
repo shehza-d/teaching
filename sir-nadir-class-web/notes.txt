@@ -1,6 +1,1 @@
-for hosting on github index.html file should be available on root/start
-repo public
-
-repo setting > Pages > Branch > none = main/master > save
-
-wait 5 mints
+https://github.com/shehza-d/teaching-git/blob/main/hosting-on-gh-pages.md

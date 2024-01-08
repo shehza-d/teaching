@@ -16,7 +16,9 @@
     <!-- value wo chez hy jo abhi input ky andar hy  -->
 
     <form id="information-form">
+      <label for="name">Name *</label>
       <input
+        id="name"
         name="name"
         value="Shehzad"
         maxlength="10"
@@ -24,7 +26,17 @@
         required
         type="text"
       />
-      <input name="father-name" placeholder="Father Name" type="text" />
+
+      <label for="father-name">Father Name *
+        <input
+        name="father-name"
+        id="father-name"
+        placeholder="Father Name"
+        type="text"
+        />
+      </label>
+
+
       <input
         name="password"
         placeholder="Password"
@@ -47,27 +59,60 @@
         value="interior sindh"
         disabled
       />
-      <input name="phone-number" placeholder="" type="tel" />
+
+      <input value="page-form" name="page-identification" type="hidden" />
+      <input name="phone-number" placeholder="phone" type="tel" />
       <input required name="profile-link" placeholder="shehzad" type="url" />
 
-      <p>Pick color for your car</p>
+      <p>Pick color for your car *</p>
       <input type="color" />
       <input type="range" />
       <input type="date" />
 
       <br /><br />
 
-      <input  type="file" accept="video/*" />
+      <input type="file" accept="video/*" />
       <input type="file" data-max-size="22154" accept=".html" />
 
-      <textarea name="" ></textarea>
+      <textarea name=""></textarea>
       <!-- file/value -->
+      <br />
+
+      <label>
+        Male
+        <input value="male" type="radio" name="gender" />
+      </label>
+
+      <label for="female">Female</label>
+      <input value="female" type="radio" id="female" name="gender" />
+      <br />
+
+      <input type="checkbox" name="service" value="itunes" checked="checked" />
+
+      iTunes <input type="checkbox" name="service" value="lastfm" /> Last.fm
+
+      <input type="checkbox" name="service" value="spotify" /> Spotify
+
+      <br /><br />
+      <!-- Select is used for Dropdown -->
+      <select name="city">
+        <option value="">Select City</option>
+        <option value="karachi">Karachi</option>
+        <option value="lahore">Lahore</option>
+        <option value="islamabad">islamabad</option>
+        <option selected value="quetta">quetta</option>
+        <option value="peshawar">peshawar</option>
+      </select>
 
       <br />
-      <button >Cancel</button>
+      <button type="button">Cancel</button>
       <button type="submit">Done</button>
     </form>
-
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <!-- <textarea ></textarea> -->
   </body>
 </html>
