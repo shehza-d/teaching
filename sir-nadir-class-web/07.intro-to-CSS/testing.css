@@ -1,0 +1,65 @@
+
+* {
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  color: green;
+  color: red;
+  background-color: black !important;
+  font-family: serif;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 25px;
+  /* display: inline; */
+}
+.para1 {
+  color: green;
+  font-family: sans-serif;
+  border: 2px solid red;
+}
+h3.para1 {
+  color: crimson;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+#one {
+  font-size: 35px;
+}
+
+/* .link {
+  text-decoration: none;
+  color: gray;
+} */
+
+ul {
+  list-style: none;
+}
+
+.navbar > li > a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* phale barabar wala element select hoga */
+h1 h2 {
+	
+}
+h1{
+	background-color: indigo;
+}
+
+#intro{
+	font-size: 20px;
+}
+
+p{
+	font-size: 12px;
+}

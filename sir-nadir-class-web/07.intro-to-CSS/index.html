@@ -4,40 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-      /* page 235 */
-      h1 {
-        color: red;
-        background-color: black;
-        font-family: sans-serif;
-        font-weight: 800;
-        font-style: italic;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: underline;
-        font-size: 25px;
-        /* display: inline; */
-      }
-      p {
-        font-family: sans-serif;
-      }
+    <link rel="stylesheet" href="./testing.css" type="text/css" />
 
-      body {
-        background-color: antiquewhite;
-      }
-    </style>
     <title>Document</title>
   </head>
   <body>
+    <ul class="navbar">
+      <li><a href="./about.html">About page</a></li>
+      <li><a href="./index.html">Home Page</a></li>
+      <li><a href="./consstsid.html">Contact us Page</a></li>
+      <li><a href="./consstsid.html">Sign In</a></li>
+      <li><a href="./consstsid.html">Sign In</a></li>
+    </ul>
+
     <h1>intro to css</h1>
-    <p>
+    <h2>This is heading 2</h2>
+    <h3>Heading 3</h3>
+    <h3 class="para1">Heading <span id="one">1</span> with para class</h3>
+
+    <p id="two" class="para1">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae amet a
       aspernatur placeat quo qui, reiciendis ipsam quae debitis voluptas,
-      consectetur illo, dolor adipisci aut. Consequatur facere officia nam
-      doloremque.
     </p>
 
-	<pre></pre>
+    <ul>
+      <li><a href="./about.html">Testing</a></li>
+      <li><a href="./index.html">menu</a></li>
+      <li><a href="./consstsid.html">course</a></li>
+      <li><a href="./consstsid.html">testing</a></li>
+    </ul>
 
+    <!-- inline styling -->
+    <p style="color: red; font-size: 30px">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae amet a
+      aspernatur placeat quo qui, reiciendis ipsam quae debitis voluptas,
+    </p>
+
+    <pre></pre>
+
+    <style>
+      /* Descendant Selector */
+      .myDiv a {
+        color: red;
+      }
+    </style>
+
+    <div class="myDiv">
+      <a href="#">Google</a>
+
+      <div>
+        <div>
+          <a href="#">Google</a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p id="intro">
+      There are <i>dozens</i> of different <b>potato</b> varieties.
+    </p>
+    <p>
+      They are usually described as early, second early and maincrop potatoes.
+    </p>
+    <hr />
+    <br /><br />
+    <br /><br />
   </body>
 </html>
