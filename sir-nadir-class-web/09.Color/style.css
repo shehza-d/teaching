@@ -1,0 +1,26 @@
+/* trying colors  */
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+* {
+  font-family: "Instrument Serif", serif;
+}
+h1 {
+  color: #16a8118d;
+  background-color: green;
+  opacity: 0.4; /* 40% */
+  /* font-family: serif; */
+}
+p {
+  font-family: Ubuntu, sans-serif;
+}
+
+h2 {
+  background-color: rgba(0, 128, 0, 0.4);
+  /* display: inline; */
+  width: fit-content;
+}
+/* rgb value */
+body {
+  background-color: rgb(126, 212, 227);
+  background-color: rgba(166, 241, 121, 0.75);
+}
