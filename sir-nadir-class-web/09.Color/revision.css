@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap");
+
+h1 {
+  font-family: "Rubik Burned", system-ui;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-weight: 900;
+}
