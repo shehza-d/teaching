@@ -1,0 +1,43 @@
+body {
+  background-color: beige;
+}
+
+div {
+  /* border-width: 10px;
+  border-color: red;
+  border-style: solid; */
+
+  /* short hand */
+  /* border: 2px solid red; */
+  /* border-top: 2px solid red;
+  border-bottom: 2px solid green; 
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+  */
+
+  margin: 30px;
+  padding: 5px;
+  /* min-height: 150px; */
+  /* max-height: 300px; */
+  /* height: 150px; */
+  /* width: 400px; */
+
+  /* overflow: scroll; */
+}
+
+h1 {
+  border-top: 2px solid red;
+  border-bottom: 2px solid green;
+}
+
+
+.container{
+	border: 2px solid orange;
+}
+
+.box{
+	display: inline;
+	height: 50px;
+	width: 50px;
+	background-color: aqua;
+}

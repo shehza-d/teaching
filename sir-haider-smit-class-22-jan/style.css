@@ -1,0 +1,48 @@
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+  border-radius: 9999px;
+}
+
+/* flex container */
+.container {
+  height: 400px;
+  border: 3px solid green;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+  /* flex-direction: row-reverse; */
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+* {
+  margin: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  /* flex-direction: column-reverse; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid blue;
+  height: 70px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  border: 1px solid red;
+}
+
+.myImg {
+  border: 2px solid green;
+  height: 30px;
+  width: 65px;
+}
