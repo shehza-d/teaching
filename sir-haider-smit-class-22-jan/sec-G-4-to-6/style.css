@@ -8,15 +8,15 @@ div {
   border-style: solid; */
 
   /* short hand */
-  /* border: 2px solid red; */
+  border: 2px solid red;
   /* border-top: 2px solid red;
   border-bottom: 2px solid green; 
   border-left: 10px solid black;
   border-right: 10px solid black;
   */
 
-  margin: 30px;
-  padding: 5px;
+  /* margin: 30px; */
+  /* padding: 50px; */
   /* min-height: 150px; */
   /* max-height: 300px; */
   /* height: 150px; */
@@ -30,14 +30,29 @@ h1 {
   border-bottom: 2px solid green;
 }
 
-
-.container{
-	border: 2px solid orange;
+.container {
+  margin: 10px;
+  height: 200px;
+  border: 5px solid orange;
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
 }
 
-.box{
-	display: inline;
-	height: 50px;
-	width: 50px;
-	background-color: aqua;
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: aqua;
+  border-radius: 1200px;
 }
+
+/* Page 314 */
+
+/* .testing {
+  height: 80px;
+  width: 80px;
+} */
