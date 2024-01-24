@@ -1,0 +1,176 @@
+<!-- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+<!-- https://www.eaisoft.com/ -->
+<!-- https://e-commerce-by-shehzad.vercel.app -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        height: 500px;
+        /* width: fit-content; */
+
+        border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        gap: 20px;
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        /* align-content: center; */
+      }
+
+      .box {
+        background-color: orange;
+        height: 100px;
+        width: 100px;
+        /* margin: 5px; */
+        /* margin-right: 10px; */
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+      }
+
+      .special {
+        /* flex-grow: 3; */
+        flex-shrink: 4;
+        align-self: end;
+        /* justify-self: end; */
+        /* order: 1; */
+        background-color: aquamarine;
+      }
+      /* .or2 {
+        order: 2;
+      }
+      .or3 {
+        order: 3;
+      }
+      .or4 {
+        order: 4;
+      } */
+
+      nav {
+        /* padding: 20px; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: 2px solid red;
+        height: 90px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+      }
+      li {
+        list-style: none;
+      }
+
+      .img {
+        height: 45px;
+        width: 65px;
+        border: 2px solid green;
+      }
+      .myImg {
+        border: 2px solid red;
+        overflow: hidden;
+      }
+      img {
+        margin: auto;
+        transition: all;
+        transition-duration: 500ms;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="img"><img src="" alt="" /></div>
+
+      <ul>
+        <li><a href="#"></a>Home</li>
+        <li><a href="#"></a>About</li>
+        <li><a href="#"></a>Contact</li>
+        <li><a href="#"></a>Services</li>
+      </ul>
+    </nav>
+	<button type="button" class="btn btn-primary">Base class</button>
+    <!-- Animation https://animate.style/ -->
+    <h1 class="animate__animated animate__zoomIn">revision</h1>
+    <!-- 
+
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box special">3</div>
+      <div class="box">4</div>
+    </div> -->
+
+    <div class="myImg">
+      <img src="./Karachi-Flickr.jpg" alt="" />
+    </div>
+
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Dropdown
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="#">Action</a></li>
+				  <li><a class="dropdown-item" href="#">Another action</a></li>
+				  <li><hr class="dropdown-divider"></li>
+				  <li><a class="dropdown-item" href="#">Something else here</a></li>
+				</ul>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" aria-disabled="true">Disabled</a>
+			  </li>
+			</ul>
+			<form class="d-flex" role="search">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		  </div>
+		</div>
+	  </nav>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
