@@ -6,7 +6,9 @@ export default function Button({
   children: React.ReactNode;
 }) {
   return (
-    <button className={`${className} bg-white/10 backdrop-blur-[20px] px-3 py-1 rounded-xl`}>
+    <button
+      className={`${className} bg-white/10 backdrop-blur-[20px] px-3 py-1 rounded-xl`}
+    >
       {children}
     </button>
   );

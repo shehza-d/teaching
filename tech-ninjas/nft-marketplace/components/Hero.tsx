@@ -1,28 +1,35 @@
 "use client";
 import { useEffect, useState } from "react";
 import Button from "@/components/common/Button";
-import Card from "./common/Card";
+import NftCard from "./common/NftCard";
 import { nfts } from "@/data";
 
 export default function Hero() {
   const [bgImage, setBgImage] = useState(0);
+  const [sliderNfts, setSliderNfts] = useState(nfts.slice(0, 4));
 
-  let backgroundImages = ["bg1.avif", "bg2.avif", "bg3.avif"];
+  const backgroundImages = ["bg1.avif", "bg2.avif", "bg3.avif"];
 
   useEffect(() => {
-    setInterval(() => {
+    const id = setInterval(() => {
       if (bgImage >= backgroundImages.length - 1) {
-        // setBgImage(0);
-        // return;
+        setBgImage(0);
+        return;
       }
 
       setBgImage(bgImage + 1);
-    }, 3000);
-  }, []);
+    }, 4000);
+
+    const id2 = setInterval(() => {
+      setSliderNfts(nfts.slice(4, 8));
+    }, 4000);
+
+    return () => clearInterval(id);
+  }, [bgImage]);
 
   return (
     <div
-      className=" h-[60vh] bg-no-repeat bg-cover transition-all duration-1000"
+      className="overflow-hidden h-[60vh] bg-no-repeat bg-cover transition-all duration-1000"
       style={{
         backgroundImage: `url(/assets/${
           backgroundImages[bgImage] || "bg1.avif"
@@ -40,15 +47,18 @@ export default function Hero() {
           <Button>Music</Button>
         </div>
 
-        {nfts.map((nft, i) => (
-          <Card
-            title={nft.title}
-            price={nft.price}
-            imageSrc={nft.imageSrc}
-            key={i}
-          />
-        ))}
+        <div className="w-screen gap-4 flex overflow-x-scroll no-scrollbar">
+          {sliderNfts.map((nft, i) => (
+            <NftCard
+              title={nft.name}
+              price={nft.floorPrice}
+              imageSrc={nft.imageSrc || ""}
+              key={i}
+            />
+          ))}
+        </div>
       </div>
+      <div className="bg-gray-800 h-12 blur-sm -m-8"></div>
     </div>
   );
 }
