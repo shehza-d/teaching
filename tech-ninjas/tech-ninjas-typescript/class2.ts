@@ -118,4 +118,4 @@ function getUsersOnlineMessage(numUsersOnline: number) {
   return "Nobody's here. :(";
 }
 
-getUsersOnlineMessage(0)
+getUsersOnlineMessage(0);

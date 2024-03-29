@@ -25,4 +25,7 @@ Note:
 - Make sure when you add name like @hamzahsyedd/calc, after @ should be your username
   if you enter some other name for eg @abc/calc it will throw an error
 - When you update your package make sure to change it's version from the package.json file
-````
+
+```
+
+```

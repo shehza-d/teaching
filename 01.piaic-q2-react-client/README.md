@@ -2,4 +2,4 @@
 
 ## [React Docs](https://react.dev/learn)
 
-## Class code for PIAIC WMD quarter 2 
+## Class code for PIAIC WMD quarter 2

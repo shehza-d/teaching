@@ -1,5 +1,5 @@
 function printAll(arrOfStrings) {
-  if (arrOfStrings?.length&& typeof arrOfStrings !== "string") {
+  if (arrOfStrings?.length && typeof arrOfStrings !== "string") {
     for (const s of arrOfStrings) {
       console.log(s);
     }

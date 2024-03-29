@@ -1,10 +1,10 @@
 // Create a slice for the book state
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   books: [],
 };
 const bookSlice = createSlice({
-  name: 'books',
+  name: "books",
   initialState,
   reducers: {
     addBook: (state, action) => {

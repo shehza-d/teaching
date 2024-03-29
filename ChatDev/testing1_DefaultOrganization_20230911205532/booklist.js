@@ -1,7 +1,7 @@
 // Display the list of books
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../reducers/bookReducer';
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { removeBook } from "../reducers/bookReducer";
 const BookList = () => {
   const books = useSelector((state) => state.books.books);
   const dispatch = useDispatch();

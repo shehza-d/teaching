@@ -32,10 +32,10 @@ const calculateMatrixValues = () => {
       //   if (result[i] === undefined) result[i] = [];
 
       const input1: HTMLInputElement = document.querySelector(
-        `#input1_${i}_${j}`
+        `#input1_${i}_${j}`,
       )!;
       const input2: HTMLInputElement = document.querySelector(
-        `#input2_${i}_${j}`
+        `#input2_${i}_${j}`,
       )!;
 
       //   result[i][j] = Number(input1.value) + Number(input2.value);

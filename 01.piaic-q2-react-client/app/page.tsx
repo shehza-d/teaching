@@ -72,8 +72,6 @@ import Image from "next/image";
 //   );
 // }
 
-
-
 // export default function Page3() {
 //   // hook are just function given by React
 //   const [age, setAge] = useState(20); // hooks are define at top level of the component

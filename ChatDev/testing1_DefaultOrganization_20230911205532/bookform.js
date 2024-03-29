@@ -1,14 +1,14 @@
 // Form to add a new book
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addBook } from '../reducers/bookReducer';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addBook } from "../reducers/bookReducer";
 const BookForm = () => {
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState("");
   const dispatch = useDispatch();
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addBook({ title }));
-    setTitle('');
+    setTitle("");
   };
   return (
     <div>

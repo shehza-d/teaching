@@ -30,7 +30,7 @@ const getWeatherData = async () => {
 
     console.log("🚀 ~ file: script.js:29 ~ getWeatherData ~ data:", data);
 
-     // Error handling
+    // Error handling
     //   agar response ok nhi hy tw
     if (!response.ok) throw Error(data.error.message);
     //
