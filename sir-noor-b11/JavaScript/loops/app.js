@@ -34,18 +34,20 @@ console.log(matrix[0][0]);
 console.log(matrix[1].indexOf(34)); // indexOf returns on which index the element is on
 console.log(matrix[1].indexOf(4567)); //
 
-let isFound = -1;
+let isFound = "nhi mila";
 
+// finding something in array
 for (let i = 0; i < students.length; i++) {
   if (students[i] === "Fatima") {
     isFound = i;
+    break;
   }
 }
 
-if (isFound !== -1) {
-  console.log("Found at index", isFound);
-} else {
+if (isFound === "nhi mila") {
   console.log("not found");
+} else {
+  console.log("Found at index", isFound);
 }
 
 // 2D array or Nested Array

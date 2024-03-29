@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>lc</h1>
+
+    <script>
+      // [4,3,2].join("$")
+      //   let x = 0;
+      //   //   let operations = ["X--", "X++", "++X", "X--", "X--","X++","++X"];
+
+      //   for (let i = 0; i < operations.length; i++) {
+      //     if (operations[i] === "X++" || operations[i] === "++X") {
+      //       x++;
+      //     } else {
+      //       x--;
+      //     }
+      //   }
+
+      // 3 https://leetcode.com/problems/valid-anagram/
+      // function isAnagram(s, t) {
+      //   // 1 sorting string
+      //   s = s.split("");
+      //   s = s.sort();
+      //   s = s.join("");
+
+      //   // 2 sorting string
+      //   // s = s.split("").sort().join("")
+      //   t = t.split("").sort().join("");
+
+      //   console.log("t= ", t);
+      //   console.log("s= ", s);
+
+      //   let result = s === t;
+      //   return result;
+      // }
+      function isAnagram(s, t) {
+        // HashTable
+        let countOfAlphabets1 = new Array(26).fill(0);
+        let countOfAlphabets2 = new Array(26).fill(0);
+
+        const getChrIndex = (ch) => ch.charCodeAt(0) - "a".charCodeAt(0);
+
+        for (let i = 0; i < s.length; i++) {
+          let index = getChrIndex(s[i]);
+          countOfAlphabets1[index] += 1;
+        }
+
+        for (let i = 0; i < t.length; i++) {
+          let index = getChrIndex(t[i]);
+          countOfAlphabets2[index] += 1;
+        }
+
+        // console.log("countOfAlphabets1:", countOfAlphabets1.join(""));
+
+        // let result = countOfAlphabets1.join() === countOfAlphabets2.join();
+        // return result;
+        for (let k = 0; k < 26; k++) {
+          if (countOfAlphabets1[k] !== countOfAlphabets2[k]) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      // let s = "zatzarz", t = "shehzad"; // false
+      // let s = "anagram",  t = "nagaram"; // true
+      (s = "listen"), (t = "silent");
+      console.log(isAnagram(s, t));
+
+      // 4.
+      // function containsDuplicate(nums) {
+      //   for (let i = 0; i < nums.length - 1; i++) {
+      //     for (let j = i + 1; j < nums.length; j++) {
+      //       // console.log(`i: ${nums[i]} j:${nums[j]}`)
+      //       if (nums[i] === nums[j]) {
+      //         return true;
+      //       }
+      //     }
+      //   }
+      //   return false;
+      // }
+
+      function containsDuplicate(nums) {
+        nums.sort();
+
+        for (let i = 0; i < nums.length - 1; i++) {
+          // console.log(`i: ${nums[i]} j:${nums[j]}`)
+          if (nums[i] === nums[i + 1]) return true;
+        }
+        return false;
+      }
+
+      // [1, 2, 3, 4] = [1, 2, 3, 4];
+    </script>
+  </body>
+</html>
