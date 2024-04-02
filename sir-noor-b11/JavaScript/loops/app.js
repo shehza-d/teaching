@@ -4,6 +4,10 @@
 
 let i = 1;
 
+// for (1; 2; 4) {
+//   3;
+// }
+
 for (
   console.log("initialization running");
   i <= 4;
