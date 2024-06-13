@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+	.card
+{
+	width: 45%;
+	border: 2px solid black;
+}
+  </style>
+	<title>Document</title>
+  </head>
+  <body>
+    <h1>Dashboard</h1>
+
+    <form id="productsForm">
+      <input type="text" name="name" placeholder="name" />
+      <input type="text" name="description" placeholder="description" />
+      <input type="text" name="price" placeholder="price" />
+
+      <button>Add product</button>
+    </form>
+
+    <div id="productList">
+      <div class="card">
+        <h3>Samsung</h3>
+        <span>40000</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          dignissimos sapiente quibusdam fuga ipsum autem odio accusamus nobis
+          fugiat. Assumenda beatae magni deleniti possimus ipsa aliquam
+          voluptatibus vitae vel quae.
+        </p>
+      </div>
+    </div>
+    <script type="module" src="../scripts/dashboard.js"></script>
+  </body>
+</html>
