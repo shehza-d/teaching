@@ -19,7 +19,7 @@ const formHandler = async (event: FormDataEvent) => {
     const city = cityInput.value;
 
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`,
     );
     if (!response.ok) throw new Error("error hy koi");
     const data = await response.json();

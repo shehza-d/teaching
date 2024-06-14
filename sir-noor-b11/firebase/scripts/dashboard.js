@@ -38,7 +38,7 @@ form.addEventListener("submit", async (e) => {
       name: name,
       description,
       price: price,
-    }
+    },
   );
 
   console.log("result ", result);

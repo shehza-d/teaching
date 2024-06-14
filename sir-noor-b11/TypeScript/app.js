@@ -3,15 +3,15 @@ const list = document.getElementById("list");
 // let variable: "shehzad" | "noor" = "noor"
 // variable = "shehzad"
 for (const company in carsObj) {
-    // @ts-ignore
-    const cars = carsObj[company];
-    for (const car in cars) {
-        const models = cars[car];
-        for (const model in models) {
-            const name = models[model].name;
-            const price = models[model].price;
-            const modelName = models[model].model;
-            list.innerHTML += `<div class="card">
+  // @ts-ignore
+  const cars = carsObj[company];
+  for (const car in cars) {
+    const models = cars[car];
+    for (const model in models) {
+      const name = models[model].name;
+      const price = models[model].price;
+      const modelName = models[model].model;
+      list.innerHTML += `<div class="card">
 		<img
 		  height="100"
 		  width="200"
@@ -26,9 +26,9 @@ for (const company in carsObj) {
 		<!-- color: ["Silver", "Black", "Red"], -->
 		<button>add to card</button>
 	  </div>`;
-            console.log("🚀 ~ test:", models[model].price);
-        }
+      console.log("🚀 ~ test:", models[model].price);
     }
+  }
 }
 // const carDetail = {
 //   name: "toyota Supra",

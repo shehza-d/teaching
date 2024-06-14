@@ -1,6 +1,5 @@
 import { carsObj } from "./file1";
 
-
 // let variable: "shehzad" | "noor" = "noor"
 
 // variable = "shehzad"
@@ -9,22 +8,19 @@ type Cars = keyof typeof carsObj;
 
 const list = document.getElementById("list")!;
 
-// 
+//
 
 for (const company in carsObj) {
-	// @ts-ignore
+  // @ts-ignore
   const cars = carsObj[company];
 
   for (const car in cars) {
     const models = cars[car];
 
     for (const model in models) {
-
-
-		const name = models[model].name
-		const price = models[model].price
-		const modelName = models[model].model
-		
+      const name = models[model].name;
+      const price = models[model].price;
+      const modelName = models[model].model;
 
       list.innerHTML += `<div class="card">
 		<img
@@ -53,7 +49,7 @@ const carDetail = {
   isAuto: false,
 };
 
-carDetail.name.toFixed() // error
+carDetail.name.toFixed(); // error
 
 let model = "colors";
 console.log(carDetail[model]);

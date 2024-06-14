@@ -28,8 +28,8 @@ export function AddToCart({
   const title = !availableForSale
     ? 'Out of stock'
     : !selectedVariantId
-    ? 'Please select options'
-    : undefined;
+      ? 'Please select options'
+      : undefined;
 
   return (
     <button
