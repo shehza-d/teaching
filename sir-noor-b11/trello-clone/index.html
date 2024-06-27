@@ -3,81 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      * {
-        font-family: sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      header {
-        background-color: purple;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 50px;
-      }
-
-      main {
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        padding: 20px;
-      }
-
-      .column {
-        border: 2px solid red;
-        min-height: 300px;
-        min-width: 300px;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-
-      .column > h3 {
-        font-size: 24px;
-        text-align: center;
-      }
-
-      .column > p {
-        padding: 8px;
-        background-color: antiquewhite;
-        text-align: center;
-      }
-
-      .column > form > input {
-        padding: 10px;
-        width: 100%;
-      }
-    </style>
     <title>Document</title>
   </head>
-
   <body>
-    <header>
-      <h1>Trello CLone</h1>
-    </header>
+    <script type="module">
+      // num1 and num2 is parameter
+      function ibrahim() {
+        // function ky ander processing
 
-    <main>
-      <div class="column">
-        <h3>Work Todo</h3>
+        // console.log("testing");
 
-        <form>
-          <input type="text" placeholder="add task" />
-        </form>
-      </div>
+        return 4; // return ky baad hum output deyngye function ka
+      }
 
-      <div class="column">
-        <h3>In progress</h3>
+      let something = 5 + ibrahim(); // 3 and 4 is arguments
 
-        <form>
-          <input type="text" placeholder="add task" />
-        </form>
-      </div>
-    </main>
+       console.log("🚀 ~ something:", something)
 
-    <script type="module" src="./script.js"></script>
+      //   console.log(ibrahim(3, 4)); // 3 and 4 is arguments
+
+      //
+
+      const myFun = () => {6 * 2 - 13;}
+      console.log("🚀 ~ myFun:", myFun())
+
+      console.log(myFun() ? "aagya samaj" : "nhi aaya samaj");
+
+	  // brain storming
+
+	  // function ko jaga se call karyn gye uski return value wahi aajaye gyi
+    </script>
   </body>
 </html>
